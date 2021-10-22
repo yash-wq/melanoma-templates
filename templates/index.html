@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+    <title>Melanoma Detection</title>
+</head>
+<body>
+    <section>
+        <div class="main">
+        <div class = 'nav' id='top'>
+            <ul>
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href=/login>Sign Up</a></li>
+                <li><a href=/login>Login</a></li>
+                
+            </ul>
+        </div>
+        <div class = 'section-1'>
+            <div class='r1'>
+                <h1>Melanoma Detection using <span>AI</span></h1>
+                <p>Making health care better together.</p>
+                <button class='get-started' type="button" onclick="window.location.href='/login'">Get started</button>                
+            </div>
+            <div class="l1">
+                <img src="static/assets/main.svg" alt="image">
+            </div>
+        </div>
+    </div>
+        <div class="section-2" id="about-us">
+            <div class = 'about-us-h'><h1>About The Project</h1><br></div>
+            <div class="about-us-content">
+                <div class="img-div">
+                    <img src="static/assets/about-us.jpg" alt="photo" class="about-us-img">
+                </div>
+                <div class="info">
+                    <ul class="list">
+                        <li class="abc">What is Melanoma?</li>
+                            <ul>
+                                <li>Melanoma is a type of skin cancer that occurs when pigment producing cells called melanocytes mutate and begin to divide uncontrollably. Most pigment cells develop in the skin. Melanomas can develop anywhere on the skin, but certain areas are more at risk than others. In men, it is most likely to affect the chest and back. In women, the legs are the most common site.</li>
+                            </ul>
+                        <li class="abc">What is our project about?</li>
+                            <ul>
+                                <li>We have developed a machine learning model which detects presence of melanoma. Using the patient's skin lesion images our model detects whether the lesion is cancerous or non-cancerous by passing it through a neural network. More than 3000 patient's skin lesion images are taken and trained with an accuracy of 80%. Our model will help the patient to detect melanoma at an early stage and take the required treatments.</li>
+                                <li></li>
+                            </ul>    
+                    </ul>
+                    <button type="button" onclick="window.location.href='#top'" class="up">&#8593</button>
+                </div>
+            </div>
+        </div>    
+    </section>
+</body>
+</html>

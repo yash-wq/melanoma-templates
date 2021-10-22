@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}" />
+    <title>Cancer Detection Model | Sign Up</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="section-1">
+        <div class="illustration-space">
+          <img
+            src="static/assets/login-screen-visual.svg"
+            alt=""
+            class="login-screen-visual"
+          /> 
+        </div>
+        <div class="login-section">
+          <h2><span>AI Driven</span> Melanoma Cancer Detection</h2>
+          <input
+            type="text"
+            class="email"
+            id="email"
+            placeholder="Enter Email Id"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+          />
+          <div class="checkbox-div">
+            <input type="checkbox" id="doctor" name="doctor" />
+            <label for="doctor">I am a Doctor</label>
+          </div>
+          <button id="create-account" onclick="signUp()">Sign up</button>
+          <a id="login-link" onclick="logIn()">Log me in!</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+    <script src="static/auth.js"></script>
+  </body>
+</html>

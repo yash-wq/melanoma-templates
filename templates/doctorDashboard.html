@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="doctorDashboard.css" /> -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='doctorDashboard.css')}}" />
+
+    <title>Verify Results</title>
+  </head>
+  <body>
+    <div class="section-1">
+      <div class="section-header">
+        <h2>ML Model Historical Outputs</h2>
+        <button onclick="logOut()">Log out</button>
+      </div>
+      <div class="photo-grid" id="photo-grid">
+        <!-- <div class="photo-grid-div">
+                    <img src="assets/report-visual.svg" alt="" id= "testImg">
+                    <p>Result: </p>
+                    <div>
+                        <p class="count">10</p>
+                        <button id="upvote" class="circle-button"></button>
+                        <button id="downvote" class="circle-button"></button>
+                        <p class="count">1</p>
+                    </div>
+                </div>
+                <div class="photo-grid-div">
+                    <img src="assets/report-visual.svg" alt="">
+                    <p>Result: </p>
+                    <div>
+                        <button id="upvote" class="circle-button"></button>
+                        <button id="downvote" class="circle-button"></button>
+                    </div>
+                </div>
+                <div class="photo-grid-div">
+                    <img src="assets/report-visual.svg" alt="">
+                    <p>Result: </p>
+                    <div>
+                        <button id="upvote" class="circle-button"></button>
+                        <button id="downvote" class="circle-button"></button>
+                    </div>
+                </div> -->
+      </div>
+      <div class="message-overlay" id="message-overlay">
+        <div class="form-container">
+          <textarea
+            name="subject"
+            id="subject-ip"
+            placeholder="Enter Subject here"
+            maxlength="100"
+            required
+          ></textarea>
+          <textarea
+            name="message"
+            id="message-ip"
+            placeholder="Enter Message here"
+            required
+          ></textarea>
+          <button id="send-mail" onclick="sendMail(name)">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+    <script src="static/state.js"></script>
+    <script src="static/handler.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+    "data": [
+      {
+        "id": "14-09-2021,16:58:22",
+        "prediction": false,
+        "url": "https://melanoma-bucket.s3.ap-south-1.amazonaws.com/mel1.jpg"
+      },
+      {
+        "id": "14-09-2021,20:29:05",
+        "prediction": true,
+        "url": "https://melanoma-bucket.s3.ap-south-1.amazonaws.com/mel2.jpg"
+      },
+      {
+        "id": "15-09-2021,15:32:45",
+        "prediction": true,
+        "url": "https://melanoma-bucket.s3.ap-south-1.amazonaws.com/mel1.jpg"
+      },
+      {
+        "id": "15-09-2021,16:03:59",
+        "prediction": true,
+        "url": "https://melanoma-bucket.s3.ap-south-1.amazonaws.com/mel1.jpg"
+      },
+      {
+        "id": "15-09-2021,16:08:08",
+        "prediction": true,
+        "url": "https://melanoma-bucket.s3.ap-south-1.amazonaws.com/mel1.jpg"
+      }
+    ]
+  }
